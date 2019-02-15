@@ -1,10 +1,10 @@
 
 function onReady() {
-  const addToDoForm = document.getElementsById('addToDoForm');
+  const addToDoForm = document.getElementById('addToDoForm');
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
-  addToDoForm.addEventListener('submit', () => {
+  addToDoForm.addEventListener('submit', event => {
   event.preventDefault();
 
       // get the text
