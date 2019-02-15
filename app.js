@@ -3,6 +3,7 @@ function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
+  const delete = document.getElementById('delete')
 
   addToDoForm.addEventListener('submit', event => {
   event.preventDefault();
@@ -15,6 +16,9 @@ function onReady() {
 
       // create a new input
       let checkbox = document.createElement('input');
+
+      //Delete an input
+ 
 
       // set the input's type to checkbox
       checkbox.type = "checkbox";
