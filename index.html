@@ -2,10 +2,26 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- Custom Styles -->
+   <link rel="stylesheet" href="styles/main.css">
+</head>
     <title>To-Do App</title>
   </head>
   <body>
+      <header class="mdl-layout__header mdl-layout__header--transparent">
     <h1>To-Do App</h1>
+
+  </header>
+         <main class="mdl-layout__content mdl-grid">
+
+         <div class = mdl-grid mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-card mdl-shadow--4dp">
+           <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
+
 
     <form id="addToDoForm">
       <label for="newToDoText">New To-Do:</label>
@@ -16,7 +32,8 @@
 
       <ul id="toDoList">
         </<ul>
-
+             </div>
+</main>
   <script src="app.js"></script>
   </body>
 </html>
