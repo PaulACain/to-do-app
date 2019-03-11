@@ -2,7 +2,7 @@
 function onReady() {
   let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm')
-  let id = 0;
+  var id = 0;
 
 
   function renderTheUI(){
@@ -45,6 +45,7 @@ function onReady() {
   function createNewToDo(){
     const newToDoText = document.getElementById('newToDoText');
     if (!newToDoText.value) {return; }
+    console.log(id);
 
     toDos.push({
       title: newToDoText.value,
@@ -52,8 +53,8 @@ function onReady() {
       id: id
     });
 
-
-
+    id=++id;
+    console.log(id)
 
     renderTheUI();
   }
